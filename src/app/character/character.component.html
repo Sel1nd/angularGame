@@ -1,0 +1,34 @@
+<div class="characterClass">
+    <div class="container">
+        <div class="row">
+          <div class="col-3 col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <button (click)="changeItem(1)" class = "characterItems characterItems1" [ngStyle]="{'background-image': 'url(../../assets/items/item'+itemNumber[0]+'.png)'}"></button>
+            <button (click)="changeItem(2)" class="characterItems characterItems2" [ngStyle]="{'background-image': 'url(../../assets/items/item'+itemNumber[1]+'.png)'}"></button>
+            <button (click)="changeItem(3)" class="characterItems characterItems3" [ngStyle]="{'background-image': 'url(../../assets/items/item'+itemNumber[2]+'.png)'}"></button>
+            <button (click)="changeItem(4)" class="characterItems characterItems4" [ngStyle]="{'background-image': 'url(../../assets/items/item'+itemNumber[3]+'.png)'}"></button>
+            <button (click)="changeItem(5)" class="characterItems characterItems5" [ngStyle]="{'background-image': 'url(../../assets/items/item'+itemNumber[4]+'.png)'}"></button>
+          </div>
+          <div class="col-6 col-6 col-sm-6	col-md-6 col-lg-6 col-xl-6">
+            <div class="characterSpace">
+                <div (click)="changeCharacter()" class="characterPlayer" [ngStyle]="{'background-image': 'url(../../assets/character/character'+characterNumber+'.png)'}"></div>
+                <div class="healthBar"></div>
+                <div class="magicBar"></div>
+            </div>
+          </div>
+          <div class="col-3 col-3 col-sm-3	col-md-3 col-lg-3 col-xl-3">
+            <button (click)="changeItem(6)" class="characterItems characterItems6" [ngStyle]="{'background-image': 'url(../../assets/items/item'+itemNumber[5]+'.png)'}"></button>
+            <button (click)="changeItem(7)" class="characterItems characterItems7" [ngStyle]="{'background-image': 'url(../../assets/items/item'+itemNumber[6]+'.png)'}"></button>
+            <button (click)="changeItem(8)" class="characterItems characterItems8" [ngStyle]="{'background-image': 'url(../../assets/items/item'+itemNumber[7]+'.png)'}"></button>
+            <button (click)="changeItem(9)" class="characterItems characterItems9" [ngStyle]="{'background-image': 'url(../../assets/items/item'+itemNumber[8]+'.png)'}"></button>
+            <button (click)="changeItem(10)"class="characterItems characterItems10" [ngStyle]="{'background-image': 'url(../../assets/items/item'+itemNumber[9]+'.png)'}"></button>
+          </div>
+        </div>
+      </div>
+      <div class="spellsSpace">
+          <button (click)="changeSpell(1)" class="spellsCharacter spellsCharacter1" [ngStyle]="{'background-image': 'url(../../assets/spells/spell'+spellNumber[0]+'.png)'}"></button>
+          <button (click)="changeSpell(2)" class="spellsCharacter spellsCharacter2" [ngStyle]="{'background-image': 'url(../../assets/spells/spell'+spellNumber[1]+'.png)'}"></button>
+          <button (click)="changeSpell(3)" class="spellsCharacter spellsCharacter3" [ngStyle]="{'background-image': 'url(../../assets/spells/spell'+spellNumber[2]+'.png)'}"></button>
+          <button (click)="changeSpell(4)" class="spellsCharacter spellsCharacter4" [ngStyle]="{'background-image': 'url(../../assets/spells/spell'+spellNumber[3]+'.png)'}"></button>
+          <button (click)="changeSpell(5)" class="spellsCharacter spellsCharacter5" [ngStyle]="{'background-image': 'url(../../assets/spells/spell'+spellNumber[4]+'.png)'}"></button>
+      </div>
+</div>
